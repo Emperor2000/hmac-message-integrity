@@ -83,14 +83,14 @@ Implementing HMAC for message validation is a crucial aspect of ensuring the int
 
 **Securely implementing HMAC relies on the following**:
 
-Key Management: Ensure secure generation and exchange of secret keys between communicating parties. Keys should be kept confidential and protected from unauthorized access.
+- Key Management: Ensure secure generation and exchange of secret keys between communicating parties. Keys should be kept confidential and protected from unauthorized access.
 
-HMAC Generation: Use cryptographic libraries to generate HMACs for outgoing messages. Include the HMAC alongside the message to provide integrity verification to the receiver.
+- HMAC Generation: Use cryptographic libraries to generate HMACs for outgoing messages. Include the HMAC alongside the message to provide integrity verification to the receiver.
 
-HMAC Verification: Upon receiving a message and its corresponding HMAC, the recipient should recalculate the HMAC using the shared secret key and compare it with the received HMAC. If the HMACs match, the message's integrity is verified.
+- HMAC Verification: Upon receiving a message and its corresponding HMAC, the recipient should recalculate the HMAC using the shared secret key and compare it with the received HMAC. If the HMACs match, the message's integrity is verified.
 
-Error Handling: Implement robust error handling mechanisms to address scenarios where HMAC verification fails. This may include logging, alerting, or rejecting messages with invalid HMACs.
+- Error Handling: Implement robust error handling mechanisms to address scenarios where HMAC verification fails. This may include logging, alerting, or rejecting messages with invalid HMACs.
 
-Documentation and Training: Document the HMAC implementation process, including key generation, message format, and HMAC verification steps. Provide training to relevant stakeholders on proper usage and security best practices.
+- Documentation and Training: Document the HMAC implementation process, including key generation, message format, and HMAC verification steps. Provide training to relevant stakeholders on proper usage and security best practices.
 
-Regular Audits and Updates: Periodically audit and update your HMAC implementation to ensure it remains aligned with the latest security standards and best practices. This may involve reviewing key management procedures, cryptographic algorithms, and error handling mechanisms.
+- Regular Audits and Updates: Periodically audit and update your HMAC implementation to ensure it remains aligned with the latest security standards and best practices. This may involve reviewing key management procedures, cryptographic algorithms, and error handling mechanisms.
