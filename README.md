@@ -60,11 +60,11 @@ In this scenario Alice sends a message to Bob along with a HMAC Alice generated 
        |            Message + HMAC                 |                                           |
        |------------------------------------------>|                                           |
        |                                           |                                           |
-       |                  Intercept & Modify       |                                           |
-       |<------------------------------------------|                                           |
        |                                           |                                           |
-       |                  Modified Message + HMAC  |                                           |
-       |------------------------------------------>|                                           |
+       |                                           |             Modified Message + HMAC       |
+       |                                           |------------------------------------------>|
+       |                                           |                                           |
+       |                                           |                                           |
        |                                           |                                           |
        |                                           |                  Verify HMAC Failure      |
        |                                           |<------------------------------------------|
