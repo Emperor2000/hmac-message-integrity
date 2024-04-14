@@ -1,0 +1,17 @@
+{
+  "name": "hmac-message-integrity",
+  "version": "1.0.0",
+  "description": "An example implementation for HMAC in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vincent Hendriks",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "openssl": "^2.0.0"
+  }
+}
