@@ -8,7 +8,7 @@ In this example, we have two parties: **Alice** (Party A, the sender) and **Bob*
 
 ### 1. Shared Secret Key Generation
 
-Before any communication takes place, Alice and Bob securely exchange a shared secret key. This key must be kept confidential and is used to generate and verify HMACs. When the key is no longer confidential between Alice and Bob (or leaked) we can no longer use this technique to determine message integrity. For this reason, we must assume that Alice and Bob has successfully exchanged a secret key through a seperate, secure (trusted) channel.
+Before any communication takes place, Alice and Bob securely exchange a shared secret key. This key must be kept confidential and is used to generate and verify HMACs. When the key is no longer confidential between Alice and Bob (leaked) we can no longer use this technique to determine message integrity. For this reason, we must assume that Alice and Bob have successfully exchanged a secret key through a seperate, secure (trusted) channel.
 When using this technique in production best practises include:
 - Utilising a secure and seperate channel for exchanging the secret, sending a secret key via a potentially insecure channel negates any trust/validity HMAC can establish.
 - Storing the secret key in an appropriate manner, such as a key-vault.
